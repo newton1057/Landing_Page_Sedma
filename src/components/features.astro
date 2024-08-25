@@ -1,0 +1,69 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Ahorra tiempo en la recopilación de datos",
+    description:
+      "Deja que Sedma se encargue de la extracción y enfoca tu tiempo en lo que realmente importa: el análisis y la publicación.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Mejora la calidad de tu Investigación",
+    description:
+      "Con datos precisos y herramientas de análisis avanzadas, tus investigaciones alcanzarán un nuevo nivel de profundidad y rigor.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Colaboración Más Eficiente",
+    description:
+      "Conoce y conecta con otros investigadores que trabajan en temas similares a través de nuestra herramienta de visualización de redes.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Acceso a Datos Actualizados en Tiempo Real",
+    description:
+      "Mantén tu investigación siempre al día con datos que se actualizan constantemente, asegurando la relevancia y precisión de tus análisis.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Personalización Adaptada a tus Necesidades",
+    description:
+      "Configura las herramientas y módulos de Sedma según los requisitos específicos de tu investigación, obteniendo resultados personalizados y ajustados a tus objetivos.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Interfaz Moderna e Intuitiva",
+    description:
+      "Disfruta de una experiencia de usuario fluida y agradable con una interfaz diseñada para ser moderna, fácil de usar, y accesible para todos los investigadores.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Maximiza tu Potencial de Investigación
+  </h2>
+  <p class="text-lg mt-4 text-secondary-800">
+    Sedma te proporciona todas las herramientas necesarias para optimizar cada etapa de tu proceso de investigación. Desde la extracción precisa de datos hasta la visualización avanzada de redes, cada característica está diseñada para potenciar la calidad y eficiencia de tus estudios.
+  </p>
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-secondary-800 rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-secondary-800 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
