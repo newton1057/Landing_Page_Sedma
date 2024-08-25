@@ -2,11 +2,11 @@ import animations from '@midudev/tailwind-animations'
 
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-
       fontFamily: {
         sans: [
           "Bricolage Grotesque Variable",
@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         'primary': "white",
         'secondary': {
+          'DEFAULT': '#3d309f',
           '50': '#eef1ff',
           '100': '#e0e5ff',
           '200': '#c7cffe',
@@ -33,5 +34,9 @@ module.exports = {
       }
     },
   },
-  plugins: [require("@tailwindcss/typography"), animations],
+
+  plugins: [
+    require("@tailwindcss/typography"), 
+    animations,
+  ],
 };
