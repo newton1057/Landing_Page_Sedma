@@ -46,17 +46,17 @@ publishedBlogEntries.sort(function (a, b) {
                       {blogPostEntry.data.category}
                     </span>
 
-                    <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
+                    <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 text-secondary">
                       {blogPostEntry.data.title}
                     </h2>
 
                     <div class="flex gap-2 mt-3">
-                      <span class="text-gray-400">
+                      <span class="text-secondary">
                         {blogPostEntry.data.author}
                       </span>
-                      <span class="text-gray-400">• </span>
+                      <span class="text-secondary">• </span>
                       <time
-                        class="text-gray-400"
+                        class="text-secondary"
                         datetime={blogPostEntry.data.publishDate.toISOString()}>
                         {blogPostEntry.data.publishDate.toDateString()}
                       </time>

@@ -16,9 +16,14 @@ module.exports = {
         ],
       },
       colors: {
-        'primary': "white",
+        'primary': "#3d309f",
         'secondary': {
-          'DEFAULT': '#3d309f',
+          'DEFAULT': 'white',
+          'HOVER': '#4536B4',
+          'button': {
+            'DEFAULT': '#30267D',
+            'HOVER': '#241C5E',
+          },
           '50': '#eef1ff',
           '100': '#e0e5ff',
           '200': '#c7cffe',

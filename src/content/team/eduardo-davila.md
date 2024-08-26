@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Eduardo Dávila"
-title: "Senior Director"
+title: "Desarrollador"
 avatar: {
     src: "https://res.cloudinary.com/drrtat4kn/image/upload/v1724554060/ProyectoTerminal/Authors/EduardoDavila_zh2mtx.jpg",
     alt: "Eduardo Dávila"
