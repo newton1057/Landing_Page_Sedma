@@ -3,9 +3,13 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Icon } from "astro-icon/components";
 
 const menuitems = [
-  {
+  /**
+   * 
+   * 
+   * {
     title: "Características",
     path: "#",
     children: [
@@ -20,14 +24,17 @@ const menuitems = [
     badge: false,
     path: "/pricing",
   },
+   */
   {
     title: "Sobre nosotros",
     path: "/about",
   },
-  {
+  /**
+   * {
     title: "Blog",
     path: "/blog",
   },
+   */
   {
     title: "Contacto",
     path: "/contact",
@@ -43,7 +50,8 @@ const menuitems = [
 ---
 
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5 text-secondary">
+  <header
+    class="flex flex-col lg:flex-row justify-between items-center my-5 text-secondary">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-3xl"><span class="font-bold">Sedma</span></a>
@@ -88,7 +96,11 @@ const menuitems = [
              * <Link href="#" style="muted" block size="md">Acceder</Link>
              */
           }
-          <Link href="#" size="md" block>Acceder</Link>
+          <Link
+            href="http://sedmaiu.s3-website-us-east-1.amazonaws.com/"
+            size="md"
+            block>Acceder</Link
+          >
         </div>
       </MenuItems>
     </Astronav>
@@ -99,7 +111,16 @@ const menuitems = [
            * <a href="#">Acceder</a>
            */
         }
-        <Link href="#" size="md">Acceder</Link>
+        <Link
+          href="http://sedmaiu.s3-website-us-east-1.amazonaws.com/"
+          size="md"
+          target="_blank"
+          class="flex gap-2 items-center justify-center"
+          >
+          <Icon class=" w-5 h-5" name="bx:bxs-log-in"/>
+          Acceder
+          </Link
+        >
       </div>
     </div>
   </header>
